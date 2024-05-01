@@ -16,6 +16,7 @@
 		31557D4B2BE1F7AD00670605 /* HelloCICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31557D4A2BE1F7AD00670605 /* HelloCICDTests.swift */; };
 		31557D552BE1F7AD00670605 /* HelloCICDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31557D542BE1F7AD00670605 /* HelloCICDUITests.swift */; };
 		31557D572BE1F7AD00670605 /* HelloCICDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31557D562BE1F7AD00670605 /* HelloCICDUITestsLaunchTests.swift */; };
+		B3280A71EF2874B2E2214297 /* Pods_HelloCICD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF18F9D23C93B52DB483621 /* Pods_HelloCICD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		31557D502BE1F7AD00670605 /* HelloCICDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCICDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31557D542BE1F7AD00670605 /* HelloCICDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCICDUITests.swift; sourceTree = "<group>"; };
 		31557D562BE1F7AD00670605 /* HelloCICDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCICDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DF18F9D23C93B52DB483621 /* Pods_HelloCICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC52132A5A3CA012362915F0 /* Pods-HelloCICD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCICD.release.xcconfig"; path = "Target Support Files/Pods-HelloCICD/Pods-HelloCICD.release.xcconfig"; sourceTree = "<group>"; };
+		E74A22139942AEA568E105F1 /* Pods-HelloCICD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCICD.debug.xcconfig"; path = "Target Support Files/Pods-HelloCICD/Pods-HelloCICD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3280A71EF2874B2E2214297 /* Pods_HelloCICD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BFB659A8A749B1FD29841F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E74A22139942AEA568E105F1 /* Pods-HelloCICD.debug.xcconfig */,
+				BC52132A5A3CA012362915F0 /* Pods-HelloCICD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		31557D272BE1F7AC00670605 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				31557D492BE1F7AD00670605 /* HelloCICDTests */,
 				31557D532BE1F7AD00670605 /* HelloCICDUITests */,
 				31557D312BE1F7AC00670605 /* Products */,
+				00BFB659A8A749B1FD29841F /* Pods */,
+				3E9C56F0C1256E427E1697F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +143,14 @@
 			path = HelloCICDUITests;
 			sourceTree = "<group>";
 		};
+		3E9C56F0C1256E427E1697F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF18F9D23C93B52DB483621 /* Pods_HelloCICD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31557D5A2BE1F7AD00670605 /* Build configuration list for PBXNativeTarget "HelloCICD" */;
 			buildPhases = (
+				95A003B0112A3F78A1727D05 /* [CP] Check Pods Manifest.lock */,
 				31557D2C2BE1F7AC00670605 /* Sources */,
 				31557D2D2BE1F7AC00670605 /* Frameworks */,
 				31557D2E2BE1F7AC00670605 /* Resources */,
+				88D30A45863A83335CF8AA99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88D30A45863A83335CF8AA99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloCICD/Pods-HelloCICD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloCICD/Pods-HelloCICD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloCICD/Pods-HelloCICD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A003B0112A3F78A1727D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCICD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31557D2C2BE1F7AC00670605 /* Sources */ = {
@@ -437,12 +505,14 @@
 		};
 		31557D5B2BE1F7AD00670605 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74A22139942AEA568E105F1 /* Pods-HelloCICD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MU8VY2LGP9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +535,14 @@
 		};
 		31557D5C2BE1F7AD00670605 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC52132A5A3CA012362915F0 /* Pods-HelloCICD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MU8VY2LGP9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloCICD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
